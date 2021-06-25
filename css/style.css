@@ -693,6 +693,8 @@ section.banner-section span {
 section.banner-section2 {
   padding: 130px 0;
   text-align: center;
+  min-height: 30rem;
+
   /*
    * Set a counter and get the length of the image path.
    */
@@ -709,7 +711,7 @@ section.banner-section2 {
   /*
      * Set a base background for 1x environments.
      */
-  background: #111 url('../upload/banners/ban2.jpg') center center no-repeat;
+  background: #111 url('../images/ban2.jpg') center center no-repeat;
   background-size: cover;
   /*
      * Create an @2x-ish media query.
@@ -875,157 +877,6 @@ section.banner-section3 span {
 }
 
 /*------------------------------------------------- */
-/* =  Popular menu section */
-/*------------------------------------------------- */
-section.popular-menu-section {
-  padding: 100px 0 80px;
-  /*
-   * Set a counter and get the length of the image path.
-   */
-  /*
-   * Loop ver the image path and figure out the
-   * position of the dot where the extension begins.
-   */
-  /*
-   * If we were able to figure out where the extension is,
-   * slice the path into a base and an extension. Use that to
-   * calculate urls for different density environments. Set
-   * values for different environments.
-   */
-  /*
-     * Set a base background for 1x environments.
-     */
-  background: #111 url('../upload/banners/ban1.jpg') center center no-repeat;
-  background-size: cover;
-  /*
-     * Create an @2x-ish media query.
-     */
-  /*
-     * Create media queries for all environments that the user has
-     * provided images for.
-     */
-  /*
-   * If anything went wrong trying to separate the file from its
-   * extension, set a background value without doing anything to it.
-   */
-}
-@media all and (-webkit-min-device-pixel-ratio: 1.5),
-  all and (-o-min-device-pixel-ratio: 3 / 2),
-  all and (min--moz-device-pixel-ratio: 1.5),
-  all and (min-device-pixel-ratio: 1.5) {
-  section.popular-menu-section {
-    background: #111 url('../upload/banners/ban1@2x.jpg') center center
-      no-repeat;
-    background-size: cover;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  section.popular-menu-section {
-    background: #111 url('../upload/banners/ban1@2x.jpg') center center
-      no-repeat;
-    background-size: cover;
-  }
-}
-section.popular-menu-section .popular-menu-box {
-  margin: 0 -15px;
-}
-section.popular-menu-section .popular-menu-post {
-  margin: 0 15px;
-  padding: 15px 30px 40px;
-  background: #fafafa;
-  text-align: center;
-}
-section.popular-menu-section .popular-menu-post img {
-  width: 100%;
-  height: auto;
-  min-height: 290px;
-  margin-bottom: 30px;
-}
-section.popular-menu-section .popular-menu-post h3 {
-  margin-bottom: 5px;
-}
-section.popular-menu-section .popular-menu-post p {
-  padding: 0 20px;
-  margin-bottom: 5px;
-}
-section.popular-menu-section .popular-menu-post span.price {
-  color: #ea462b;
-  display: block;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-section.popular-menu-section .owl-controls {
-  z-index: 999;
-}
-section.popular-menu-section .owl-pagination {
-  padding-top: 20px;
-}
-section.popular-menu-section .owl-pagination .owl-page span {
-  width: 10px;
-  height: 10px;
-}
-section.popular-menu-section .owl-theme .owl-controls .owl-page.active span,
-section.popular-menu-section
-  .owl-theme
-  .owl-controls.clickable
-  .owl-page:hover
-  span {
-  background: #ea462b;
-  border-color: #ea462b;
-}
-section.popular-menu-section .owl-buttons {
-  display: block;
-  position: absolute;
-  top: 50%;
-  margin-top: -30px;
-  width: 100%;
-}
-@media (max-width: 991px) {
-  section.popular-menu-section .owl-buttons {
-    display: none;
-  }
-}
-section.popular-menu-section .owl-buttons div {
-  background: transparent !important;
-  margin: 0;
-  padding: 0 !important;
-  width: 60px;
-  height: 60px;
-  border: 1px solid #a1a1a1;
-  line-height: 58px !important;
-  text-align: center;
-  color: #222222 !important;
-  transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-}
-section.popular-menu-section .owl-buttons div:hover {
-  background-color: #ea462b !important;
-  border-color: transparent !important;
-  color: #fff !important;
-}
-section.popular-menu-section .owl-buttons div.owl-prev {
-  margin-left: -80px;
-  float: left;
-}
-section.popular-menu-section .owl-buttons div.owl-next {
-  margin-right: -80px;
-  float: right;
-}
-section.popular-menu-section .owl-buttons div.owl-prev:before {
-  content: '\f104';
-  font-family: 'FontAwesome';
-  font-size: 24px;
-}
-section.popular-menu-section .owl-buttons div.owl-next:before {
-  content: '\f105';
-  font-family: 'FontAwesome';
-  font-size: 24px;
-}
-
-/*------------------------------------------------- */
 /* =  Services section */
 /*------------------------------------------------- */
 section.services-section .services-box {
@@ -1057,14 +908,9 @@ section.menu-section .menu-box {
   margin-bottom: 100px;
 }
 section.menu-section .menu-box.pizza-menu {
-  background: #ffffff url('../upload/banners/ban3.jpg') 0 0 no-repeat;
+  background: #ffffff url('../images/ban3.jpg') 0 0 no-repeat;
 }
-section.menu-section .menu-box.pasta-menu {
-  background: #ffffff url('../upload/banners/ban4.jpg') right 0 no-repeat;
-}
-section.menu-section .menu-box.burger-menu {
-  background: #ffffff url('../upload/banners/ban5.jpg') 0 0 no-repeat;
-}
+
 section.menu-section .menu-box .image-holder img {
   width: 100%;
   height: auto;
@@ -1563,7 +1409,7 @@ section.testimonial-section {
   /*
      * Set a base background for 1x environments.
      */
-  background: #111 url('../upload/banners/ban6.jpg') center center no-repeat;
+  background: #111 url('../images/ban6.jpg') center center no-repeat;
   background-size: cover;
   /*
      * Create an @2x-ish media query.
